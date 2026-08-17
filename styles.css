@@ -1,0 +1,54 @@
+* {
+    /* outline: 1px solid red; */
+}
+:root {
+    --color-accent: #ffe01b;
+    --color-background: rgb(245, 245, 245);
+    --color-text: rgb(35, 30, 21);
+    --text-font-size: 20px;
+    --text-line-height: round(to-zero, 1.3em, 1px);
+}
+html {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
+}
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.content {
+    margin: 3rem auto;
+    max-width: 61ch;
+}
+ul, ol {
+    padding: 0;
+}
+li {
+    padding: round(to-zero, calc(var(--text-line-height) / 6), 1px) 0;
+}
+li::marker {
+    font-size: round(to-zero, 0.9em, 1px);
+}
+.recipe-list {
+    /* padding: 0; */
+}
+.recipe-list li::marker {
+    /* content: "◦"; */
+}
+.nav--home {
+    border: 1px solid rgba(35,30,21,.3);
+    border-radius: 12px;
+    color: var(--color-text);
+    display: inline-block;
+    font-size: round(to-zero, 1.3em, 1px);
+    text-decoration: none;
+    padding: 8px 16px;
+}
+.nav--home:hover {
+    background-color: var(--color-accent);
+}
